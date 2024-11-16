@@ -1,0 +1,2 @@
+File: 2208960.cif
+  Warning: Invalid CIF file with no structures!
