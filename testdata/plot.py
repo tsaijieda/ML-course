@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Path to the .npz file
-file_path = "../output_data/1011209_convolved.npz"
+file_path = "D:/OLD_DATA/main/NTU/third_grade/ML_PHYS/project/output_data/output_data/1000009_convolved.npz"
 
 # Load the .npz file
 data = np.load(file_path)
