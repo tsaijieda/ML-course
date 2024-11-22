@@ -1,0 +1,28 @@
+CNNLSTM_epoch40:
+
+CNN_BiLSTM(
+  (conv1): Conv1d(2, 64, kernel_size=(5,), stride=(1,), padding=(2,))
+  (conv2): Conv1d(64, 128, kernel_size=(5,), stride=(1,), padding=(2,))
+  (pool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (dropout_cnn): Dropout(p=0.3, inplace=False)
+  (lstm): LSTM(128, 64, num_layers=2, batch_first=True, dropout=0.3, bidirectional=True)
+  (fc1): Linear(in_features=128, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=7, bias=True)
+  (dropout_fc): Dropout(p=0.3, inplace=False)
+)
+
+epoch = 40
+lr = 0.001, no schedular
+
+SIMPLIFIED_CNNLSTM_epoch50:
+
+Simplified_CNN_BiLSTM(
+  (conv1): Conv1d(2, 32, kernel_size=(5,), stride=(1,), padding=(2,))
+  (pool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (lstm): LSTM(32, 32, batch_first=True, bidirectional=True)
+  (fc): Linear(in_features=64, out_features=7, bias=True)
+)
+
+epoch = 50
+lr = 0.001, schedular
