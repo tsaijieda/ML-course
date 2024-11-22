@@ -1,5 +1,7 @@
 CNNLSTM_epoch40:
 
+dataset:normal size
+
 CNN_BiLSTM(
   (conv1): Conv1d(2, 64, kernel_size=(5,), stride=(1,), padding=(2,))
   (conv2): Conv1d(64, 128, kernel_size=(5,), stride=(1,), padding=(2,))
@@ -15,6 +17,8 @@ epoch = 40
 lr = 0.001, no schedular
 
 SIMPLIFIED_CNNLSTM_epoch50:
+
+datasize: normal size
 
 Simplified_CNN_BiLSTM(
   (conv1): Conv1d(2, 32, kernel_size=(5,), stride=(1,), padding=(2,))
